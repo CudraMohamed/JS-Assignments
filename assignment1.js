@@ -3,7 +3,7 @@
 // multiples of three print "Fizz" instead of the number and for the multiples of five print
 // "Buzz". For numbers which are multiples of both three and five print "FizzBuzz"
 function rangeLoop(){
-    for (let num = 0; num <=100; num++){        //loop through range(1-100)
+    for (let num = 1; num <=100; num++){        //loop through range(1-100)
         if (num % 3 ===0 && num % 5 ===0){      //check for multiples of 3 & 5
             console.log(num,"-> FizzBuzz");
         }
@@ -19,23 +19,14 @@ function rangeLoop(){
 rangeLoop();    //invoke the function
 
 //Write a JavaScript program to sum the multiples of 3 and 5 under 1000
-numbThree=0;
-numbFive=0;
+let addition=0;
 function sum(){
     for (let i = 0;i<=1000;i++){        //loop through the range(0-1000)
-        if (i%3===0){
-            let numbThree=i             //declare a variable & assign it to variable i
-            console.log(numbThree,`is divisible by 3`);
-        }
-        else if(i%5===0){
-            let numbFive=i
-            console.log(numbFive,`is divisible by five`);
-        }
-        else{
-            let total=numbThree + numbFive
-            console.log(i,`->`,total);
+        if (i%3===0 && i%5===0){
+            addition+=i;
         }
     }
+    console.log(`The sum of multiples of 3 and 5 ->`,addition)    
 }
 sum();
 
