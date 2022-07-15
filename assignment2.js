@@ -3,17 +3,17 @@
 // requested (2) and return total cost in this printed format (2 Oranges for KES 60.00). 
 // calculateFruitCost(fruitName, quantity)
 // For example, calculateFruitCost('orange', 2) should return "2 Oranges for KES 60.00"
-let price=30;
+// let price=30;
 function calculateFruitCost(fruitName,quantity){
     const fruitObj=[
         {fruit:"Oranges",price:30.00},
-        {fruit:"Bananas",price:20.00}
+        {fruit:"Mango",price:50}
     ]
-    fruitObj.find(item => item.fruit===fruitName)
-    let fruitPrice=price
+    let fruitOne=fruitObj.find(item => item.fruit===fruitName)
+    let fruitPrice=fruitOne.price
     console.log(`${quantity} ${fruitName} for KES ${fruitPrice*quantity}`)
 }
-calculateFruitCost("Orange",3)
+calculateFruitCost("Mango",3)
 
 // Write a class KioskCalc that has the following fruitsPriceList object.
 // this.fruitsPriceList = { "orange": 30, "mango": 15, "avocado": 40 }; 
