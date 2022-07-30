@@ -9,11 +9,8 @@ let subTitle=document.querySelectorAll("h3")
 
 let fruitChild=document.createElement("li");
 fruitChild.appendChild(document.createTextNode("Avocado"));
-let newFruit=document.getElementById("fruList").appendChild(fruitChild);
+let newFruit=document.getElementById("avocado").appendChild(fruitChild);
 
 let vegChild=document.createElement("li");
 vegChild.appendChild(document.createTextNode("Carrots"));
-let newVeg=document.getElementById("vegList").appendChild(vegChild);
-
-// let subTitleColor=document.querySelectorAll("h3")
-// .subTitleColor.style.color="yellow";
+let newVeg=document.getElementById("carrot").appendChild(vegChild);
